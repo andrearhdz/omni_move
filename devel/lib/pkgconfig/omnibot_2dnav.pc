@@ -1,0 +1,8 @@
+prefix=/home/slabs-036/Escritorio/omni_move/devel
+
+Name: omnibot_2dnav
+Description: Description of omnibot_2dnav
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

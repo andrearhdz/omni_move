@@ -1,0 +1,8 @@
+prefix=/home/slabs-036/Escritorio/omni_move/install
+
+Name: bluesea
+Description: Description of bluesea
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

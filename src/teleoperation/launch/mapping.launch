@@ -1,0 +1,12 @@
+<launch> 
+
+    <!-- tf broadcaster -->
+    <node name="robot_tf_publisher" pkg="robot_setup_tf" type="tf_broadcaster.cpp" output="screen"/>
+
+    <!-- lidar launch -->
+    <include file="$(find bluesea)/launch/LDS-50C-2.launch"/>
+
+    <!-- visual odometry launch -->
+    <include file="$(find rf2o_laser_odometry)/launch/rf2o_laser_odometry.launch"/>
+
+</launch>
