@@ -1,0 +1,8 @@
+prefix=/home/slabs-036/Escritorio/omni_move2/devel
+
+Name: modelo_urdf7
+Description: Description of modelo_urdf7
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

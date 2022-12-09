@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="modelo_urdf7">
+  <link
+    name="BASE">
+    <inertial>
+      <origin
+        xyz="0.000338255879255235 0.0612529314979907 -0.0108391359392291"
+        rpy="0 0 0" />
+      <mass
+        value="2.73129560782572" />
+      <inertia
+        ixx="0.00684771592977348"
+        ixy="-8.1688898976531E-06"
+        ixz="5.22648674986173E-07"
+        iyy="0.00971289587185003"
+        iyz="1.41162422613265E-05"
+        izz="0.00619216854900505" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/BASE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/BASE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Llanta1">
+    <inertial>
+      <origin
+        xyz="-0.0265000000000004 5.68989300120393E-16 4.16333634234434E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.387424814717317" />
+      <inertia
+        ixx="0.000453457248908455"
+        ixy="-1.33241150708585E-19"
+        ixz="-4.51523274027657E-19"
+        iyy="0.000316106792470943"
+        iyz="6.7762635780344E-21"
+        izz="0.000316106792470943" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/Llanta1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/Llanta1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LL1"
+    type="continuous">
+    <origin
+      xyz="-0.079 -0.078 0.018"
+      rpy="-2.8838 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="Llanta1" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Llanta2">
+    <inertial>
+      <origin
+        xyz="0.0264999999999999 -3.19189119579733E-16 1.38777878078145E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.387424814717318" />
+      <inertia
+        ixx="0.000453457248908455"
+        ixy="1.10202595389589E-36"
+        ixz="-5.98569949393038E-21"
+        iyy="0.000316106792470943"
+        iyz="6.87141502616335E-37"
+        izz="0.000316106792470943" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/Llanta2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/Llanta2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LL2"
+    type="continuous">
+    <origin
+      xyz="0.079 -0.078 0.018"
+      rpy="1.5708 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="Llanta2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Llanta3">
+    <inertial>
+      <origin
+        xyz="0.0264999999999999 8.32667268468867E-16 1.38777878078145E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.387424814717318" />
+      <inertia
+        ixx="0.000453457248908455"
+        ixy="-3.67341984631962E-37"
+        ixz="-8.77600311083533E-37"
+        iyy="0.000316106792470943"
+        iyz="-4.29472680748581E-38"
+        izz="0.000316106792470943" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/Llanta3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/Llanta3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LL3"
+    type="continuous">
+    <origin
+      xyz="0.079 0.078 0.018"
+      rpy="1.5708 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="Llanta3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Llanta4">
+    <inertial>
+      <origin
+        xyz="-0.0265000000000001 -3.85108611666851E-16 -1.66533453693773E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.387424814717317" />
+      <inertia
+        ixx="0.000453457248908454"
+        ixy="-7.3468396926393E-37"
+        ixz="-9.29362638007222E-37"
+        iyy="0.000316106792470943"
+        iyz="-1.60864717645473E-36"
+        izz="0.000316106792470943" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/Llanta4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_urdf7/meshes/Llanta4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LL4"
+    type="continuous">
+    <origin
+      xyz="-0.079 0.078 0.018"
+      rpy="1.5708 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="Llanta4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+
+   <gazebo reference="imu_link">
+    <gravity>true</gravity>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>_default_topic_</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu</topicName>
+        <bodyName>imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>imu_link</frameName>
+        <initialOrientationAsReference>false</initialOrientationAsReference>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+   <gazebo>
+    <plugin name="imu_plugin" filename="libgazebo_ros_imu.so">
+      <alwaysOn>true</alwaysOn>
+      <bodyName>BASE</bodyName>
+      <topicName>imu</topicName>
+      <serviceName>imu_service</serviceName>
+      <gaussianNoise>0.0</gaussianNoise>
+      <updateRate>20.0</updateRate>
+    </plugin>
+  </gazebo>
+  
+</robot>

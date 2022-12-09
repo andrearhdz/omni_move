@@ -1,0 +1,8 @@
+prefix=/home/slabs-036/Escritorio/omni_move2/devel
+
+Name: bluesea
+Description: Description of bluesea
+Version: 0.0.0
+Cflags: -I/home/slabs-036/Escritorio/omni_move2/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

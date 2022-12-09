@@ -1,0 +1,16 @@
+<launch>
+
+    <!-- Comunicación con arduino -->
+    <node name="serial_node"        pkg="rosserial_python"      type="serial_node.py">
+    <param name="port"              type="string"               value="/dev/ttyACM0"/>
+    <param name="baud"              type="int"                  value="57600"/>
+    </node>
+
+    <!-- Script de python para el PWM-->
+    <!-- <node name="pwm_node" pkg="teleoperation" type="talker_pwm.py" output="screen"/> -->
+
+    <!-- Script de python para las teclas-->
+    <node name="keys_node" pkg="teleoperation" type="teleop_twist_keyboard.py" output="screen"/>
+
+
+</launch>

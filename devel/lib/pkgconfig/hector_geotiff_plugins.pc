@@ -1,0 +1,8 @@
+prefix=/home/slabs-036/Escritorio/omni_move2/devel
+
+Name: hector_geotiff_plugins
+Description: Description of hector_geotiff_plugins
+Version: 0.5.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: hector_geotiff hector_nav_msgs
